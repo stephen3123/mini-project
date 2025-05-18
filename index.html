@@ -4,7 +4,341 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Welcome to Roja</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css" />body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background:url('roja beach.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+        }
+
+        header p {
+            font-size: 1.8rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+        }
+
+        header img {
+            vertical-align: middle;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            background: #002244;
+            padding: 1rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: none;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        .content {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 2.5rem;
+            color: #002244;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            line-height: 1.6;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem auto;
+            max-width: 1200px;
+        }
+
+        .card {
+            background: linear-gradient(to bottom right, #FFD700, #FFA500);
+            border-radius: 10px;
+            padding: 1.5rem;
+            color: #002244;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #002244;
+        }
+
+        footer {
+            background: linear-gradient(to right, #002244, #005F99);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .section {
+            margin-top: 2rem;
+            text-align: left;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .highlight {
+            color: #FFD700;
+        }
+
+        .button {
+            display: inline-block;
+            background: #FFD700;
+            color: #002244;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background: #FFA500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        th {
+            background-color: #FFD700;
+            color: #002244;
+        }
+
+        iframe {
+            border: 0;
+            width: 100%;
+            height: 600px;
+        }
+       
+
+        .card-container {
+            display: inline-flex;
+            gap: 1.5rem;
+        }
+        .news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.news-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.news-title {
+    color: #002244;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.news-date {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.news-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+h2 {
+    color: #002244;
+}
+.event-calendar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.event-card {
+    background: linear-gradient(to bottom right, #FFD700, #FFA500);
+    border-radius: 10px;
+    display: flex;
+    padding: 1.5rem;
+    color: #002244;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    align-items: center;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+}
+
+.event-date {
+    background: #002244;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    min-width: 80px;
+}
+
+.event-date .day {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.event-date .month {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 0.2rem;
+}
+
+.event-details {
+    flex-grow: 1;
+}
+
+.event-title {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #002244;
+}
+
+.event-details p {
+    font-size: 1rem;
+    margin: 0.5rem 0 0;
+    line-height: 1.4;
+    color: #333;
+}
+
+    #gallery {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        margin: 2rem 0;
+    }
+
+    .slideshow-container {
+        position: relative;
+        max-width: 100%;
+        height: 500px;
+    }
+
+    .slide {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .fade {
+        animation: fadeEffect 2s ease-in-out;
+    }
+
+    @keyframes fadeEffect {
+        from {
+            opacity: 0.4;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="aboutroja.html">About Roja</a>
+        <a href="#attractions">Attractions</a>
+        <a href="#news">Latest News</a>
+        <a href="#calendar">Event Calendar</a>
+        <a href="#map">City Map</a>
+        <a href="#gallery">Photo Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+
+  
   
 </head>
 <body>
